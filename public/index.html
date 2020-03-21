@@ -10,22 +10,29 @@
 
 <body>
 
-  <section id="title" style="padding: 10px 35px">
-    <h1>COVID-19 RESOURCE PAGE</h1>
-    <span class="mid-p">A powerful list of resources meant to empower in a time of foreseeable uncertainty</span>
+  <section id="topbar" style="padding: 0;">
+    <img src="logo.png" alt="" height="80px" style="margin: 10px; margin-right: 30px;">
   </section>
 
+  <header>
+    <section id="title" style="padding: 10px 10px;">
+      <h1>COVID-19 RESOURCE PAGE</h1>
+      <!-- <span class="mid-p">A powerful list of resources meant to empower in a time of foreseeable uncertainty</span> -->
+    </section>
 
-  <!-- INTRO -->
-  <section>
-    <p class="big-p">lacinia venenatis nisi feugiat ultrices. Fusce quis blandit velit. Cras vehicula dolor sit amet purus dictum sollicitudin. Integer posuere iaculis nibh. In pulvinar, dui at euismod laoreet, dolor mauris maximus odio, </p>
-    <p class="gray">A powerful list of resources meant to empower in a time of foreseeable uncertainty</p>
-    <ul>
-      <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-      <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-      <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-    </ul>
+      <!-- INTRO -->
+  <section id="intro">
+    <h3>lacinia venenatis nisi feugiat ultrices. Fusce quis blandit velit. Cras vehicula dolor sit amet purus dictum sollicitudin. Integer posuere iaculis nibh. In pulvinar, dui at euismod laoreet, dolor mauris maximus odio?</h3>
   </section>
+  
+  <section id="main-img" style="background-color: #ff6eee;">
+    <img id="spinner" src="lienglobecovid.gif" alt="">
+  </section>
+  </header>
+  
+
+
+
 
   <!-- GET INFORMED -->
   <section>
@@ -95,13 +102,34 @@
     </div>
   </section>
 
+
+
+
+
+  <!-- FOOTER -->
+
+  <section style="background-color: #ff6eee;">
+
+  </section>
+
+
+
+
+
+
 <script>
 
 function toggleSection(el) {
   let element = document.getElementById(el);
-  element.hidden = !element.hidden;
+  if (element.hidden) {
+    element.hidden = false;
+    // element.parentElement
+    element.parentElement.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+  } else {
+    element.hidden = true;
+    element.parentElement.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+  }
 }
-
 </script>
 </body>
 
