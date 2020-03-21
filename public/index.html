@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section id="title" style="padding: 10px 35px">
+    <h1>COVID-19 RESOURCE PAGE</h1>
+    <span class="mid-p">A powerful list of resources meant to empower in a time of foreseeable uncertainty</span>
+  </section>
+
+
+  <!-- INTRO -->
+  <section>
+    <p class="big-p">lacinia venenatis nisi feugiat ultrices. Fusce quis blandit velit. Cras vehicula dolor sit amet purus dictum sollicitudin. Integer posuere iaculis nibh. In pulvinar, dui at euismod laoreet, dolor mauris maximus odio, </p>
+    <p class="gray">A powerful list of resources meant to empower in a time of foreseeable uncertainty</p>
+    <ul>
+      <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+      <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+      <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+    </ul>
+  </section>
+
+  <!-- GET INFORMED -->
+  <section>
+    <div class="section-header">
+      <h2>GET INFORMED.</h2>
+      <button onclick="toggleSection('get-informed-content')">+</button>
+    </div>
+
+    <div id="get-informed-content" hidden>
+      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
+      <ul>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- STAY FIT -->
+  <section>
+    <div class="section-header">
+      <h2>STAY FIT.</h2>
+      <button onclick="toggleSection('stay-fit-content')">+</button>
+    </div>
+
+    <div id="stay-fit-content" hidden>
+      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
+      <ul>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- IMPRVOE YOURSELF -->
+  <section>
+    <div class="section-header">
+      <h2>IMPROVE YOURSELF.</h2>
+      <button onclick="toggleSection('improve-yourself-content')">+</button>
+    </div>
+
+    <div id="improve-yourself-content" hidden>
+      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
+      <ul>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONSUME FOR BETTER -->
+  <section>
+    <div class="section-header">
+      <h2>CONSUME FOR BETTER.</h2>
+      <button onclick="toggleSection('consume-content')">+</button>
+    </div>
+
+    <div id="consume-content" hidden>
+      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
+      <ul>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+<script>
+
+function toggleSection(el) {
+  let element = document.getElementById(el);
+  element.hidden = !element.hidden;
+}
+
+</script>
+</body>
+
+</html>
