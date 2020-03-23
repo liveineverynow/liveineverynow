@@ -47,6 +47,11 @@ body {
   grid-area: titl;
 }
 
+#copy {
+  grid-area: copy;
+  background-color: var(--bg2);
+}
+
 #logo {
   grid-area: logo;
   display: flex;
@@ -298,7 +303,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: 
-    "logo logo logo more more more"
+    "logo logo copy copy more more"
     "tick tick tick tick tick tick"
     "titl titl titl titl anim anim"
     "intr intr intr intr anim anim"
