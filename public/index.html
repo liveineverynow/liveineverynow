@@ -125,6 +125,9 @@
       #mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; }
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        #mc_embed_signup {
+          width: 100%;
+        }
         #mc_embed_signup input.email {
           background: #fff;
           padding: 0.5rem;
@@ -138,8 +141,10 @@
         }
 
         #mc_embed_signup form {
-          width: 500px;
-          margin: 30px 50px;
+          max-width: 500px;
+          width: 90%;
+          margin: 30px auto;
+          padding: 0;
         }
 
         #mc_embed_signup input.button {
