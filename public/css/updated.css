@@ -104,7 +104,7 @@ body {
   background-color: var(--fg2);
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -192,7 +192,7 @@ p {
 p.imp {
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.2em;
+  line-height: 1.27em;
   margin: 0 0 1rem 0;
   color: var(--fg);
 }
@@ -383,7 +383,7 @@ h1 {
 
 ul {
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: start;
   list-style: none;
 }
