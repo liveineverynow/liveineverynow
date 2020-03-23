@@ -1,0 +1,310 @@
+/*===================================================
+--------------------- Variables ---------------------
+===================================================*/
+
+
+
+html {
+  --fg: #111111;
+  --bg: #e7e7e7;
+
+  --fg2: #ff6eee;
+  --bg2: #b4b4b4;
+}
+
+
+
+/*===================================================
+---------------------- Resets -----------------------
+===================================================*/
+
+
+
+html, body, h1, h2, h3, p, ol,
+ul, li, a, div, span, article,
+aside, main, section, header {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+/*===================================================
+-------------------- Components ---------------------
+===================================================*/
+
+/* Header components */
+
+#title {
+  grid-area: titl;
+}
+
+#logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-img {
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5rem;
+}
+
+#more {
+  grid-area: more;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#ticker {
+  grid-area: tick;
+  background-color: var(--fg);
+}
+
+#intro {
+  grid-area: intr;
+}
+
+#anim {
+  grid-area: anim;
+  background-color: var(--fg2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  box-sizing: border-box;
+  border-top: 0.5rem solid black;
+  border-right: 0.5rem solid black;
+  border-left: 0.5rem solid black;
+
+  padding: 2rem 2rem;
+}
+
+section.unpadded {
+  padding: 0 2rem;
+}
+
+div.content {
+  display: block;
+}
+
+div.content.hidden {
+  display: none;
+}
+
+.section-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  width: 4em;
+}
+
+h1 {
+  font-size: 4.25em;
+  font-weight: bold;
+  line-height: 1.1em;
+
+  color: var(--fg2);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.62em;
+  font-weight: bold;
+  line-height: 1.1em;
+
+  color: var(--fg);
+}
+
+h3 {
+  font-size: 1.62em;
+  font-weight: bold;
+  line-height: 1.1em;
+
+  color: var(--fg);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.62em;
+
+  margin: 1em 0 1rem 0;
+  color: var(--fg);
+}
+
+p.imp {
+  font-size: 1.62rem;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 1em 0 1rem 0;
+  color: var(--fg);
+}
+
+p.wrapped {
+  max-width: 800px;
+}
+
+/* Link buttons */
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+li a {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  border: 0.25rem solid black;
+  padding: 0.6rem 1.1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  box-shadow: 0rem 0rem 0 0 black;
+  transition: top 200ms, left 200ms, box-shadow 200ms;
+}
+
+li a:hover {
+  background: #ff6eee;
+  color: white;
+  position: relative;
+  top: -0.5rem;
+  left: -0.6rem;
+  box-shadow: 0.5rem 0.6rem 0 0 black;
+}
+
+li a:hover span {
+  color: black;
+}
+
+a span {
+  font-size: 1rem;
+  color: #b4b4b4;
+  font-weight: normal;
+}
+
+a {
+  color: var(--fg2);
+}
+
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: start;
+
+  background-color: var(--fg2);
+}
+
+label {
+  font-size: 1rem;
+}
+
+form {
+  width: 80%;
+  max-width: 500px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  display: block;
+  border: 5px solid black;
+  padding: 0.5em;
+  width: 100%;
+  height: 5rem;
+  font-size: 1rem;
+}
+
+input {
+  margin: 5px; 
+}
+
+input[type="submit"] {
+  box-sizing: border-box;
+  display: block;
+  border: 5px solid black;
+  padding: 0.3em;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/*===================================================
+----------------- Responsive Layout -----------------
+===================================================*/
+
+
+
+/* Mobile (Default) */
+html { 
+  font-size: 15px;
+}
+
+
+/* Tablet modifications*/
+@media (min-width: 460px) {
+
+html {
+  font-size: 17px;
+}
+
+}
+
+
+/* Desktop modifications*/
+@media (min-width: 1000px) {
+
+html {
+  font-size: 19px;
+}
+
+header {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+    "logo logo logo more more more"
+    "tick tick tick tick tick tick"
+    "titl titl titl titl anim anim"
+    "intr intr intr intr anim anim"
+  ;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+}

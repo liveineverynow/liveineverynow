@@ -4,61 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/updated.css">
 </head>
 
 <body>
 
-  <section id="topbar" style="padding: 0;">
-    <img src="logo.png" alt="" height="80px" style="margin: 10px; margin-right: 30px;">
-  </section>
-
   <header>
-    <section id="title" style="padding: 10px 10px;">
-      <h1>COVID-19 RESOURCE PAGE</h1>
-      <!-- <span class="mid-p">A powerful list of resources meant to empower in a time of foreseeable uncertainty</span> -->
+
+    <!-- Logo -->
+    <section id="logo" class="unpadded">
+      <img src="assets/logo.png" id="logo-img">
     </section>
 
-      <!-- INTRO -->
-  <section id="intro">
-    <h3>lacinia venenatis nisi feugiat ultrices. Fusce quis blandit velit. Cras vehicula dolor sit amet purus dictum sollicitudin. Integer posuere iaculis nibh. In pulvinar, dui at euismod laoreet, dolor mauris maximus odio?</h3>
-  </section>
+    <!-- Learn more -->
+    <section id="more" class="unpadded">
+      <a href="/more">LEARN ABOUT OUR MISSION</a>
+    </section>
+
+    <!-- Ticker -->
+    <section id="ticker">
+
+    </section>
+
+    <!-- Title -->
+    <section id="title" class="unpadded">
+      <h1>COVID-19 RESOURCE PAGE</h1>
+    </section>
+
+    <!-- Intro -->
+    <section id="intro">
+      <p class="imp">
+        Hey folks, our current setback comes as an untimely, uncomfortable, and frightening situation. It's easy to let uncertainty flood our minds and ultimately control our actions, our hearts, and  our lives. Times like these teach us that it is not only healthy but imperative that we push ourselves forward with even more diligence than typical. At LIVEINEVERYNOW. we believe that the best way through uncertainty is to take control of the things we can still control. We're choosing to view the recommended time in isolation as an opportunity to work on the parts of ourselves we wish to with even more fervor than ever before. </p>
+
+      <p class="imp">
+        We feel most empowered through knowledge and hope that this page can serve as an empowerment tool for you. All hope is not lost. Continue your journeys, the time is of the essence. Control what you can control, fear and anxiety lie in wait otherwise. And finally, live for yourself, live for others, and <i>live in every now.</i></p>
+
+        <p class="imp">
+        For starters. check out <a href="https://www.youtube.com/watch?v=jvDDPpxa-Vk">this video</a> on how Matt D'Avella deals with uncertainty. We endorse this outlook.</p>
+
+
+    </section>
   
-  <section id="main-img" style="background-color: #ff6eee;">
-    <img id="spinner" src="lienglobecovid.gif" alt="">
-  </section>
+    <!-- Spinning Animation -->
+    <section id="anim">
+      <img src="assets/lienglobecovid.gif" width="100%">
+    </section>
   </header>
   
 
 
 
-
-  <!-- GET INFORMED -->
-  <section>
-    <div class="section-header">
-      <h2>GET INFORMED.</h2>
-      <button onclick="toggleSection('get-informed-content')">+</button>
-    </div>
-
-    <div id="get-informed-content" hidden>
-      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
-      <ul>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-      </ul>
-    </div>
-  </section>
-
   <!-- STAY FIT -->
   <section>
     <div class="section-header">
       <h2>STAY FIT.</h2>
-      <button onclick="toggleSection('stay-fit-content')">+</button>
+      <button onclick="toggleSection('stay-fit-content', this)"><img src="assets/down.png"></button>
     </div>
 
-    <div id="stay-fit-content" hidden>
+    <div class="content hidden" id="stay-fit-content">
       <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
       <ul>
         <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
@@ -67,49 +70,23 @@
       </ul>
     </div>
   </section>
-  
-  <!-- IMPRVOE YOURSELF -->
-  <section>
-    <div class="section-header">
-      <h2>IMPROVE YOURSELF.</h2>
-      <button onclick="toggleSection('improve-yourself-content')">+</button>
-    </div>
-
-    <div id="improve-yourself-content" hidden>
-      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
-      <ul>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONSUME FOR BETTER -->
-  <section>
-    <div class="section-header">
-      <h2>CONSUME FOR BETTER.</h2>
-      <button onclick="toggleSection('consume-content')">+</button>
-    </div>
-
-    <div id="consume-content" hidden>
-      <p class="wrapped">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro temporibus sapiente quos excepturi dolore iusto recusandae neque repudiandae explicabo, est veritatis cum doloremque dicta officia eos eligendi animi quaerat corporis!</p>
-      <ul>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-        <li><a href="#">OUR BEST RESOURCES <span>google.com</span></a></li>
-      </ul>
-    </div>
-  </section>
-
-
 
 
 
   <!-- FOOTER -->
 
-  <section style="background-color: #ff6eee;">
+  <section id="footer">
 
+    <p class="imp">
+      If you have any feedback for us please let us know.
+    </p>
+
+    <form action="mailto:will.hanlen@gmail.com">
+      <input type="text" placeholder="Feedback">
+      <input type="checkbox" name="helpful">
+      <label for="helpful">Was this content helpful?</label>
+      <input type="submit" value="SEND">
+    </form>
   </section>
 
 
@@ -119,16 +96,17 @@
 
 <script>
 
-function toggleSection(el) {
+function toggleSection(el, that) {
   let element = document.getElementById(el);
-  if (element.hidden) {
-    element.hidden = false;
-    // element.parentElement
-    element.parentElement.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+  let image = that.firstElementChild;
+
+  if (element.classList.contains("hidden")) {
+    image.style.transform = "rotate(180deg)";
   } else {
-    element.hidden = true;
-    element.parentElement.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+    image.style.transform = "rotate(0deg)";
   }
+  
+  element.classList.toggle('hidden');
 }
 </script>
 </body>
