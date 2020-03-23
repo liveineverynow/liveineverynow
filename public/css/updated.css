@@ -42,6 +42,12 @@ body {
 ===================================================*/
 
 /* Header components */
+#topbar {
+  grid-area: topb;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 
 #title {
   grid-area: titl;
@@ -49,16 +55,15 @@ body {
 
 #ex1 {
   display: block;
-  font-size: 1rem;
+  font-size: 0.617em;
   margin-top: 15px;
   margin-bottom:-5px;
   text-align: center;
 }
 
-#ex2 {
-  display: block;
-  font-size: 1.42rem;
-  text-align: center;
+#ex23 {
+  margin: 0;
+  padding: 5px;
 }
 
 #copy {
@@ -80,8 +85,28 @@ body {
   margin-left: 0;
 }
 
-#more {
-  grid-area: more;
+#social {
+  grid-area: soci;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#social a {
+  width: 40px;
+  height: 40px;
+  margin: 15px 12px;
+  padding: 0;
+}
+
+#social img {
+  width: 40px;
+}
+
+#mission {
+  flex-grow: 1;
+  grid-area: miss;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -108,9 +133,9 @@ body {
   align-items: center;
 }
 
-/* #anim img {
-  height: 60%;
-} */
+#copyright {
+  background-color: var(--bg2);
+}
 
 section {
   box-sizing: border-box;
@@ -118,11 +143,11 @@ section {
   border-right: 0.5rem solid black;
   border-left: 0.5rem solid black;
 
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
 }
 
 section.unpadded {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 div.content {
@@ -151,7 +176,7 @@ button img {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 4.25em;
   font-weight: bold;
   line-height: 1.1em;
 
@@ -179,18 +204,18 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: normal;
-  line-height: 1.62em;
+  line-height: 1.27em;
 
-  margin: 1em 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   color: var(--fg);
 
   text-align: center;
 }
 
 p.imp {
-  font-size: 1.6rem;
+  font-size: 1.62em;
   font-weight: bold;
   line-height: 1.27em;
   margin: 0 0 1rem 0;
@@ -271,7 +296,7 @@ p a {
 }
 
 
-#more a {
+#mission a {
   background-color: white;
   color: black;
   border: 0.25rem solid black;
@@ -350,15 +375,15 @@ html {
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 600px;
+  grid-template-rows: minmax(100px, auto) auto 1fr;
   grid-template-areas: 
-    "logo logo more more more more"
+    "topb topb topb topb topb "
 
-    "titl titl titl titl anim anim"
-    "intr intr intr intr anim anim"
+    "titl titl titl titl anim"
+    "intr intr intr intr anim"
   ;
   justify-items: stretch;
   align-items: stretch;
@@ -388,7 +413,7 @@ ul {
   list-style: none;
 }
 
-#more {
+#mission {
   justify-content: flex-end;
 }
 
@@ -400,15 +425,10 @@ ul {
   margin-bottom:15px;
 }
 
-h1 {
-  font-size: 4.25em;
-}
-
-h2 {
-  font-size: 4.2em
-}
-
-p.imp{
-  font-size: 2.36rem;
+#topbar {
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: stretch;
 }
 }
