@@ -63,6 +63,7 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 0.5rem;
+  margin-left: 0;
 }
 
 #more {
@@ -72,6 +73,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  background-color: #b4b4b4;
 }
 
 #ticker {
@@ -87,9 +89,14 @@ body {
   grid-area: anim;
   background-color: var(--fg2);
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   align-items: center;
 }
+
+/* #anim img {
+  height: 60%;
+} */
 
 section {
   box-sizing: border-box;
@@ -133,8 +140,11 @@ h1 {
   font-weight: bold;
   line-height: 1.1em;
 
+  -webkit-text-stroke: 0.26rem var(--fg2);
+
   color: var(--fg2);
   text-align: center;
+  /* word-break: break-all;  */
 }
 
 h2 {
@@ -180,8 +190,19 @@ p.wrapped {
 
 ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
+}
+
+li {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  flex-grow: 1;
+
 }
 
 li a {
@@ -193,9 +214,9 @@ li a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  margin-right: 1rem;
+  /* margin-top: 1rem; */
   color: black;
+  width: 100%;
   font-weight: bold;
   text-decoration: none;
   position: relative;
@@ -226,6 +247,20 @@ a span {
 
 a {
   color: var(--fg2);
+  text-align: center;
+
+}
+
+p a {
+  text-decoration: underline;
+}
+
+
+#more a {
+  background-color: white;
+  color: black;
+  border: 0.25rem solid black;
+  padding: 0.5rem 0.8rem;
 }
 
 #footer {
@@ -303,10 +338,10 @@ header {
   font-size: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 100px auto 1fr;
   grid-template-areas: 
-    "logo logo copy copy more more"
-    "tick tick tick tick tick tick"
+    "logo logo more more more more"
+
     "titl titl titl titl anim anim"
     "intr intr intr intr anim anim"
   ;
@@ -314,8 +349,32 @@ header {
   align-items: stretch;
 }
 
-* {
+p {
   text-align: left;
+}
+
+#logo {
+  justify-content: start;
+  padding-left: 0.4rem;
+}
+
+section {
+  border-left: 0;
+}
+
+h1 {
+  text-align: left;
+}
+
+ul {
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: start;
+  list-style: none;
+}
+
+#more {
+  justify-content: end;
 }
 
 }
