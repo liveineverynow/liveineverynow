@@ -47,6 +47,23 @@ body {
   grid-area: titl;
 }
 
+#ex1 {
+  display: block;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom:-10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ex2 {
+  display: block;
+  font-size: 1.42rem;
+  margin-bottom:15px;
+  font-weight: bold;
+  text-align: center;
+}
+
 #copy {
   grid-area: copy;
   background-color: var(--bg2);
@@ -144,7 +161,7 @@ h1 {
 
   color: var(--fg2);
   text-align: center;
-  /* word-break: break-all;  */
+  word-break: break-all; 
 }
 
 h2 {
@@ -175,7 +192,7 @@ p {
 }
 
 p.imp {
-  font-size: 1.62rem;
+  font-size: 2.36rem;
   font-weight: bold;
   line-height: 1.2em;
   margin: 1em 0 1rem 0;
@@ -376,5 +393,10 @@ ul {
 #more {
   justify-content: end;
 }
+
+#ex1, #ex2 {
+  text-align: left;
+}
+
 
 }
