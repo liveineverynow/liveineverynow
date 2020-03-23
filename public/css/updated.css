@@ -160,6 +160,8 @@ p {
 
   margin: 1em 0 1rem 0;
   color: var(--fg);
+
+  text-align: center;
 }
 
 p.imp {
@@ -310,6 +312,10 @@ header {
   ;
   justify-items: stretch;
   align-items: stretch;
+}
+
+* {
+  text-align: left;
 }
 
 }
