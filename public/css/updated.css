@@ -148,11 +148,11 @@ section {
   border-right: 0.5rem solid black;
   border-left: 0.5rem solid black;
 
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 section.unpadded {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 div.content {
@@ -179,6 +179,8 @@ button img {
   width: 7.5rem;
   margin: -20px;
   margin-right: -7px;
+  /* transition: ro; */
+  transition: 300ms ease all;
 }
 
 h1 {
@@ -206,12 +208,14 @@ h3 {
   font-weight: bold;
   line-height: 1.1em;
 
+  text-align: center;
+
   margin-top: 1em;
   color: var(--fg);
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.62em;
 
@@ -245,6 +249,7 @@ ul.btns {
 }
 
 li {
+  font-size: 1.62rem;
   margin-top: 0.7rem;
 }
 
@@ -268,6 +273,9 @@ a {
   top: 0;
   left: 0;
   transition: top 300ms, left 300ms;
+}
+li span {
+  font-size: 1.62rem;
 }
 a:hover {
   top: -3px;
@@ -314,7 +322,10 @@ a span {
   font-weight: normal;
 }
 
+
+
 a {
+  font-size: 1.62rem;
   color: var(--fg2);
   text-align: center;
 
@@ -420,6 +431,7 @@ header {
 }
 
 p {
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -467,4 +479,29 @@ ul.btns li {
   margin-right: 1rem;
 
 }
+
+h3 {
+  text-align: left;
+}
+
+section{
+padding: 2rem 1rem;
+}
+
+section.unpadded {
+  padding: 0 1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+li span {
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+
+}
+
 }
