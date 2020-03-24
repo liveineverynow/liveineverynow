@@ -175,9 +175,9 @@ button {
 }
 
 button img {
-  width: 7em;
+  width: 7.5em;
   margin: -20px;
-  margin-right: -10px;
+  margin-right: -7px;
 }
 
 h1 {
@@ -212,7 +212,7 @@ h3 {
 p {
   font-size: 1em;
   font-weight: normal;
-  line-height: 1.27em;
+  line-height: 1.62em;
 
   margin: 1rem 0 1rem 0;
   color: var(--fg);
@@ -229,7 +229,7 @@ p.imp {
 }
 
 p.wrapped {
-  max-width: 800px;
+  max-width: 670px;
 }
 
 /* Link buttons */
@@ -244,7 +244,15 @@ ul.btns {
 }
 
 li {
-  margin-top: 0.3rem;
+  margin-top: 0.7rem;
+}
+
+.playlist-link {
+  width: 50px;
+}
+
+.playlist-link img {
+  width: 50px;
 }
 
 ul.btns li {
@@ -258,9 +266,11 @@ ul.btns li {
 a {
   position: relative;
   top: 0;
+  left: 0;
+  transition: top 300ms, left 300ms;
 }
 a:hover {
-  top: -1px;
+  top: -3px;
   left: -1px;
 }
 
@@ -391,15 +401,16 @@ html {
 
 html {
   font-size: 19px;
+  /* font-size: 1.7rem; */
 }
 
 header {
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 600px;
   grid-template-rows: minmax(100px, auto) auto 1fr;
   grid-template-areas: 
-    "topb topb topb topb topb "
+    "topb topb topb topb topb"
 
     "titl titl titl titl anim"
     "intr intr intr intr anim"
@@ -424,6 +435,7 @@ section {
 h1 {
   text-align: left;
 }
+
 
 ul.btns {
   flex-flow: row wrap;
