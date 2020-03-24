@@ -176,7 +176,7 @@ button {
 }
 
 button img {
-  width: 7.5em;
+  width: 7.5rem;
   margin: -20px;
   margin-right: -7px;
 }
@@ -260,7 +260,6 @@ ul.btns li {
   width: 100%;
   max-width: 650px;
   margin-top: 1rem;
-  margin-right: 1rem;
   flex-grow: 1;
 
 }
@@ -462,5 +461,10 @@ ul.btns {
   flex-flow: row nowrap;
   justify-content: stretch;
   align-items: stretch;
+}
+
+ul.btns li {
+  margin-right: 1rem;
+
 }
 }
