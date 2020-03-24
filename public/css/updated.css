@@ -230,7 +230,7 @@ p.imp {
 }
 
 p.wrapped {
-  max-width: 670px;
+  max-width: 700px;
 }
 
 /* Link buttons */
@@ -383,7 +383,7 @@ input[type="submit"] {
 
 /* Mobile (Default) */
 html { 
-  font-size: 15px;
+  font-size: 12px;
 }
 
 
