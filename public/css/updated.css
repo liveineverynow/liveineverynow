@@ -71,6 +71,10 @@ body {
   background-color: var(--bg2);
 }
 
+ul {
+  margin-left: 1rem;
+}
+
 #logo {
   grid-area: logo;
   display: flex;
@@ -173,6 +177,7 @@ button {
 button img {
   width: 7em;
   margin: -20px;
+  margin-right: -10px;
 }
 
 h1 {
@@ -229,7 +234,7 @@ p.wrapped {
 
 /* Link buttons */
 
-ul {
+ul.btns {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -238,6 +243,10 @@ ul {
 }
 
 li {
+  margin-top: 0.3rem;
+}
+
+ul.btns li {
   width: 100%;
   max-width: 650px;
   margin-top: 1rem;
@@ -245,8 +254,16 @@ li {
   flex-grow: 1;
 
 }
+a {
+  position: relative;
+  top: 0;
+}
+a:hover {
+  top: -1px;
+  left: -1px;
+}
 
-li a {
+ul.btns li a {
   box-sizing: border-box;
   font-size: 1.6rem;
   border: 0.25rem solid black;
@@ -267,7 +284,7 @@ li a {
   transition: top 200ms, left 200ms, box-shadow 200ms;
 }
 
-li a:hover {
+ul.btns li a:hover {
   background: #ff6eee;
   color: white;
   position: relative;
@@ -276,7 +293,7 @@ li a:hover {
   box-shadow: 0.5rem 0.6rem 0 0 black;
 }
 
-li a:hover span {
+ul.btns li a:hover span {
   color: black;
 }
 
@@ -369,7 +386,7 @@ html {
 
 
 /* Desktop modifications*/
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
 
 html {
   font-size: 19px;
@@ -396,7 +413,7 @@ p {
 
 #logo {
   justify-content: start;
-  padding-left: 0.4rem;
+  padding-right: 180px;
 }
 
 section {
@@ -407,7 +424,7 @@ h1 {
   text-align: left;
 }
 
-ul {
+ul.btns {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: start;
