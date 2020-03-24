@@ -55,7 +55,7 @@ body {
 
 #ex1 {
   display: block;
-  font-size: 0.617em;
+  font-size: 1em;
   margin-top: 15px;
   margin-bottom:-5px;
   text-align: center;
@@ -64,6 +64,7 @@ body {
 #ex23 {
   margin: 0;
   padding: 5px;
+  font-size: 1.62em;
 }
 
 #copy {
@@ -181,7 +182,7 @@ button img {
 }
 
 h1 {
-  font-size: 4.25em;
+  font-size: 6.88em;
   font-weight: bold;
   line-height: 1.1em;
 
@@ -193,7 +194,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.6em;
+  font-size: 4.25em;
   font-weight: bold;
   line-height: 1.1em;
 
@@ -221,7 +222,7 @@ p {
 }
 
 p.imp {
-  font-size: 1.62em;
+  font-size: 2.62em;
   font-weight: bold;
   line-height: 1.27em;
   margin: 0 0 1rem 0;
