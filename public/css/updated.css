@@ -235,6 +235,7 @@ p.wrapped {
 /* Link buttons */
 
 ul.btns {
+  margin-left: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
