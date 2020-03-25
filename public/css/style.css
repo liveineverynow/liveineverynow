@@ -18,7 +18,7 @@ header {
   display: grid;
   grid-template-columns: 5fr 1fr ;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 
+  grid-template-areas:
     "logo logo"
     "ticker ticker"
     "title main-img"
@@ -194,7 +194,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
+    grid-template-areas:
     "logo ticker ticker"
     "title title main-img"
     "intro intro main-img"
