@@ -366,7 +366,9 @@ li {
   justify-content: flex-start;
   align-items: center;
 }
-
+li a {
+  text-decoration: underline;
+}
 #listener {
   position: absolute;
   width: 36rem;
