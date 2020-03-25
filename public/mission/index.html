@@ -7,6 +7,9 @@
   <!-- <link rel="stylesheet" href="css/updated.css"> -->
 
   <style>
+    html {
+      font-size: 12px;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -31,41 +34,74 @@
       margin: 0;
       padding: 0;
     }
-    img {
+    .tmarg {
+      margin-top: 3rem;
+    }
+    a {
+      color: #ff6eee;
+    }
+    #logo {
       display: block;
-      width: 80%;
-      max-width: 500px;
-      margin: 70px auto 100px auto;
+      width: 100%;
+      max-width: 18rem;
+    }
+    #back img{
+      width: 35px;
+      margin-right: 10px;
     }
 
-
-    @media (max-width: 900px) {
-
-        div {
-          font-size: 25px;
-          max-width: 500px;
-        }
-        span {
-          font-size: 18px;
-        }
-
+    div {
+      width: 90%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      padding-bottom: 30vh;
     }
+
+    #back a{
+      color: black;
+      text-decoration: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      html {
+        font-size: 16px;
+      }
+      div {
+        max-width: calc(20vw + 60rem);
+        padding-left: 20vw;
+      }
+      #back {
+      position: fixed;
+      top: 0;
+      left: 2vw;
+    }
+    }
+
+    
   </style>
 </head>
 
 <body>
 
-  <img src="../assets/logo.png" alt="">
+  
   <div>
-    <p class="medium"><b>LIVEINEVERYNOW. aka LIEN.</b></p>
+    <p  id="back" class="medium tmarg"><a href="../"><img src="../assets/back.png"><b>BACK</b></a></p>
+    <img id="logo" class="tmarg" src="../assets/logo.png" alt="">
+    <p class="medium tmarg"><b>LIVEINEVERYNOW. aka LIEN.</b></p>
     <p class="small gray">/lien/</p>
     <p><i>directive</i></p>
     <p class="indented">1. To practice mindfulness in the pursuit of greatness</p>
 
-    <p class="large"><b><i>Our mission is to remind people to be more present through high quality, purpose-driven content, design, and material.</i></b></p>
+    <p class="large tmarg"><b><i>Our mission is to remind people to be more present through high quality, purpose-driven content, design, and material.</i></b></p>
 
-    <p>by Jake and Will</p>
+    <p class="medium tmarg">by Jake and Will</p>
     
+    <p class="tmarg"><a href="mailto:jake@liveineverynow.com">Get in touch now</a>
+    </p>
   </div>
 </body>
 
