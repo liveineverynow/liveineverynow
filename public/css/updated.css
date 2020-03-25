@@ -198,7 +198,7 @@ h1 {
 h2 {
   font-size: 4.25em;
   font-weight: bold;
-  line-height: 1.1em;
+  line-height: 1.3em;
 
   color: var(--fg);
 }
@@ -237,6 +237,9 @@ p.wrapped {
   max-width: 700px;
 }
 
+.intro-a {
+  font-size: 1em;
+}
 /* Link buttons */
 
 ul.btns {
@@ -254,11 +257,40 @@ li {
 }
 
 .playlist-link {
-  width: 50px;
+  font-size: 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  background: black;
+  border: 0.2rem solid white;
+  color: white;
+  padding: 0.4rem 0;
+  margin-right: 10px;
+  width: 185px;
 }
 
-.playlist-link img {
-  width: 50px;
+#playlist-header {
+  color: white;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+#playlist-link-div {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#listener {
+  position: absolute;
+  width: 350px;
+  top: -20px;
+  right: -175px;
+  z-index: 0;
 }
 
 ul.btns li {
@@ -401,7 +433,7 @@ html {
 @media (min-width: 460px) {
 
 html {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 }
@@ -502,6 +534,18 @@ li span {
 li {
   font-size: 1rem;
 
+}
+
+#listener {
+  right: 100px;
+}
+
+
+#playlist-link-div {
+
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 }
