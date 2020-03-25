@@ -51,6 +51,7 @@ body {
 .bigger {
   font-size: 1.62em;
   margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 #title {
@@ -375,7 +376,7 @@ li {
 }
 
 ul.btns li {
-  /* width: 100%; */
+  width: 100%;
   max-width: 500px;
   margin-top: 1rem;
   flex-grow: 1;
@@ -565,7 +566,7 @@ h1 {
 
 ul.btns {
   flex-flow: row wrap;
-  justify-content: stretch;
+  justify-content: flex-start;
   align-items: stretch;
   list-style: none;
 }
