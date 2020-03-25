@@ -348,7 +348,7 @@ li {
 #playlist-header {
   color: white;
   margin-bottom: 1rem;
-  max-width: 700px;
+  max-width: 950px;
   margin-top: 0;
   position: relative;
   z-index: 2;
@@ -364,9 +364,9 @@ li {
 
 #listener {
   position: absolute;
-  width: 350px;
-  top: -20px;
-  right: -175px;
+  width: 36rem;
+  top: -0;
+  right: -17rem;
   z-index: 0;
 }
 
@@ -614,7 +614,9 @@ li {
 }
 
 #listener {
+  width: 25rem;
   right: 100px;
+  top: -30px;
 }
 
 
