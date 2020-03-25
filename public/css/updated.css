@@ -48,6 +48,10 @@ body {
   flex-flow: column nowrap;
 }
 
+.bigger {
+  font-size: 1.62em;
+  margin-top: 2rem;
+}
 
 #title {
   grid-area: titl;
@@ -371,8 +375,8 @@ li {
 }
 
 ul.btns li {
-  width: 100%;
-  max-width: 650px;
+  /* width: 100%; */
+  max-width: 500px;
   margin-top: 1rem;
   flex-grow: 1;
 
@@ -395,12 +399,12 @@ ul.btns li a {
   box-sizing: border-box;
   font-size: 1.6rem;
   border: 0.25rem solid black;
-  padding: 0.6rem 1.1rem;
+  padding: 0.6rem 0.7rem;
+  flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  /* margin-top: 1rem; */
   color: black;
   width: 100%;
   font-weight: bold;
@@ -410,6 +414,7 @@ ul.btns li a {
   left: 0rem;
   box-shadow: 0rem 0rem 0 0 black;
   transition: top 200ms, left 200ms, box-shadow 200ms;
+  text-transform: capitalize;
 }
 
 ul.btns li a:hover {
@@ -560,8 +565,8 @@ h1 {
 
 ul.btns {
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: stretch;
+  align-items: stretch;
   list-style: none;
 }
 
