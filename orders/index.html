@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="../">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/ico" sizes="16x16">
+
+
+  <style>
+    html {
+      font-size: 12px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    .small {
+      font-size: 1rem;
+    }
+    .medium {
+      font-size: 1.6rem;
+    }
+    .large {
+      font-size: 6rem;
+    }
+    .gray {
+      color: #b4b4b4;
+    }
+    .indented {
+      margin-left: 1.6rem;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .tmarg {
+      margin-top: 3rem;
+    }
+    a {
+      color: #ff6eee;
+    }
+    #logo {
+      display: block;
+      width: 100%;
+      max-width: 18rem;
+    }
+    #back img{
+      width: 35px;
+      margin-right: 10px;
+    }
+
+    div {
+      width: 85%;
+      margin: auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+      padding-bottom: 30vh;
+    }
+
+    #back a{
+      color: black;
+      text-decoration: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      html {
+        font-size: 16px;
+      }
+      div {
+        margin: 0;
+        max-width: calc(20vw + 60rem);
+        padding-left: 20vw;
+      }
+      #back {
+      position: fixed;
+      top: 0;
+      left: 2vw;
+    }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <div>
+    <p  id="back" class="medium tmarg"><a href="../"><img src="../assets/back.png"><b>BACK</b></a></p>
+    <img id="logo" class="tmarg" src="../assets/logo.png" alt="">
+    <p class="medium tmarg">Orders and Fullfillment</p>
+    <p class="tmarg">We produce these shirts on a per order basis so please allow up to 6-8 weeks for fulfillment. Thank you for patience.</p>
+    <p class="tmarg indented">Jake and Will</p>
+
+  </div>
+</body>
+
+</html>
