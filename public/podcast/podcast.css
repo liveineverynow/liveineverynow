@@ -41,6 +41,7 @@ nav span {
   font-size: var(--L);
   color: var(--f2);
   line-height: var(--tall);
+  margin-bottom: var(--gap1);
 }
 
 .social-nav {
