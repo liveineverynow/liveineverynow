@@ -21,7 +21,7 @@
     <language>en-us</language>
 
     <!-- Explicit -->
-    <!-- <itunes:explicit>yes</itunes:explicit> -->
+    <itunes:explicit>yes</itunes:explicit>
 
     <!-- Homepage -->
     <link>https://liveineverynow.com/podcast</link>
