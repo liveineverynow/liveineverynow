@@ -1,3 +1,98 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87ae678f7e4ba79f01edb4b8439c0adcc9f017c180376cf2a95d1c2a1cae44ad
-size 1427
+body {
+  width: var(--article);
+  margin: auto;
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  width: var(--thin);
+  margin: var(--gap1) auto;
+}
+
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: auto;
+}
+
+nav a {
+  font-size: var(--L);
+  color: var(--f2);
+  line-height: var(--tall);
+  font-weight: var(--bold);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--ac);
+}
+
+nav span {
+  font-size: var(--M);
+  font-weight: var(--bold);
+  color: var(--f2);
+  margin-bottom: 0.6rem;
+}
+
+.intro {
+  font-size: var(--L);
+  color: var(--f2);
+  line-height: var(--tall);
+  margin-bottom: var(--gap1);
+}
+
+.social-nav {
+  margin: 8rem 0 15rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.social-nav a {
+  text-decoration: none;
+}
+
+.social-nav i {
+  color: var(--f1);
+  display: block;
+  margin: 0 3rem;
+}
+
+.social-nav i:hover {
+  color: var(--ac);
+}
+
+footer {
+  margin-top: 13rem;
+  margin-bottom: 2rem;
+}
+
+strong {
+  font-weight: var(--bold);
+}
+
+footer span {
+  font-size: var(--S);
+  color: var(--f2);
+}
+
+h3 {
+  font-size: var(--XL);
+  color: var(--f1);
+  line-height: var(--short);
+  font-weight: var(--bold);
+  margin: 5rem 0 2rem 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--XXL);
+  color: var(--f1);
+  line-height: var(--short);
+  font-weight: var(--bold);
+  margin: 5rem 0 2rem 0;
+  text-transform: uppercase;
+}
