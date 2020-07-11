@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e034f8428489fa12e959950f8de4523d4be882b83038eff2e3685d9e1860700d
-size 472
+{
+  "name": "lien-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo hi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liveineverynow/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liveineverynow/website/issues"
+  },
+  "homepage": "https://github.com/liveineverynow/website#readme",
+  "dependencies": {
+    "vercel": "^19.0.1"
+  }
+}

@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26b983596cd6249e63577c5838533371b6f761473d7ecec63943cd07a2e0c8d7
-size 1300
+/* 
+======================================
+======= Homepage COMPONENTS ==========
+======================================
+*/
+
+#logo {
+  display: block;
+  width: 220px;
+  margin: var(--gap1) auto;
+}
+
+h2 {
+  font-size: var(--XL);
+  font-weight: var(--bold);
+  line-height: var(--short);
+  text-align: center;
+}
+
+p.intro {
+  display: block;
+  width: var(--thin);
+  font-weight: var(--bold);
+  margin: var(--gap3) auto;
+  text-align: center;
+  font-size: var(--L);
+}
+
+.f2 {
+  color: var(--f2);
+}
+
+nav.centered {
+  width: var(--wide);
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-align: center;
+  display: block;
+  font-size: var(--M);
+  margin: 1rem;
+  color: var(--f1);
+  background-color: var(--b2);
+  text-decoration: none;
+  padding: 2rem 3rem;
+  border-radius: var(--radius);
+  font-weight: var(--bold);
+  box-shadow: var(--no-shadow);
+
+  transition-property: box-shadow, background-color, color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--curve);
+
+}
+
+nav a:hover {
+  color: var(--f1);
+  background-color: var(--ac);
+  box-shadow: var(--shadow);
+}
+
+/* 
+======================================
+======== Article COMPONENTS ==========
+======================================
+*/
+
+article p {
+}
