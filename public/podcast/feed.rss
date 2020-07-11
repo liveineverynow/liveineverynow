@@ -37,6 +37,7 @@
 
     <!-- Categories -->
 		<itunes:category text="Business"></itunes:category>
+		<itunes:category text="Culture & Society"></itunes:category>
 		<itunes:category text="Technology"></itunes:category>
 		<itunes:category text="Education"></itunes:category>
 		<itunes:category text="Health"></itunes:category>
