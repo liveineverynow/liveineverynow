@@ -87,7 +87,8 @@ html {
 
   /* Column Widths */
   --mobile: 90%;
-  --thin: min(40rem, var(--mobile));
+  --logo: min(40rem, var(--mobile));
+  --thin: min(65rem, var(--mobile));
   --article: min(85rem, var(--mobile));
   --wide: min(137rem, var(--mobile));
 

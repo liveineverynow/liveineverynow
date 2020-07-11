@@ -6,7 +6,7 @@ body {
 
 #logo {
   display: block;
-  width: var(--thin);
+  width: var(--logo);
   margin: var(--gap1) auto;
 }
 
