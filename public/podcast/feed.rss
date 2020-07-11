@@ -9,7 +9,7 @@
     <title>LIVEINEVERYNOW. Podcast</title>
 
     <!-- Author -->
-    <itunes:author>LIVEINEVERYNOW.</itunes:author>
+    <itunes:author>LIVEINEVERYNOW.</itunes:author> 
 
     <!-- Description -->
     <description>The tools and ideas we use on our journey through business, creativity, and life.</description>
@@ -19,6 +19,9 @@
     
     <!-- Language -->
     <language>en-us</language>
+
+    <!-- Explicit -->
+    <!-- <itunes:explicit>yes</itunes:explicit> -->
 
     <!-- Homepage -->
     <link>https://liveineverynow.com/podcast</link>
@@ -55,19 +58,20 @@
     <item>
       <title>001 - Goals Are Incomplete</title>
       <guid>20200710</guid>
-      <description>We discuss goals, where they fall short, and how to use them in conjunction with visions and systems to achieve what you want. 
+      <description>We discuss goals, where they fall short, and how to use them in conjunction with visions and systems to achieve what you want.
 
-      Twitter: lienpodcast
+      Twitter: LIENpodcast
       Instagram: liveineverynow.podcast
 
       More from LIVEINEVERYNOW.
       https://liveineverynow.com
-      Twitter: liveineverynow
-      Instagram: liveineverynow
+      Twitter: LIVEINEVERYNOW
+      Instagram: liveineverynow.
       </description>
       <pubDate>Fri, 10 Jul 2020 12:00:00 GMT</pubDate>
       <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/001.mp3"
                  type="audio/mpeg" length="116362560"/>
+      <itunes:explicit>yes</itunes:explicit>
       <itunes:duration>48:29</itunes:duration>
     </item>
 
