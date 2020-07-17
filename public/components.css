@@ -47,7 +47,7 @@ nav a {
   color: var(--f1);
   background-color: var(--b2);
   text-decoration: none;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   border-radius: var(--radius);
   font-weight: var(--bold);
   box-shadow: var(--no-shadow);
@@ -59,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--f1);
+  color: var(--b1);
   background-color: var(--ac);
   box-shadow: var(--shadow);
 }
