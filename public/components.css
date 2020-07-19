@@ -47,7 +47,7 @@ nav a {
   color: var(--f1);
   background-color: var(--b2);
   text-decoration: none;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   border-radius: var(--radius);
   font-weight: var(--bold);
   box-shadow: var(--no-shadow);
