@@ -54,6 +54,32 @@
 
 
 
+    <!-- 003 - Make Your Bed -->
+    <item>
+      <title>003 - Make Your Bed If You Want A Better Life</title>
+      <guid>20200718</guid>
+      <description>We discuss how to build productive momentum in your life by simply starting your day by making your bed.
+
+      Admiral McRaven's Speech: https://youtu.be/3sK3wJAxGfs
+
+      Twitter: LIENpodcast
+      Instagram: liveineverynow.podcast
+
+      More from LIVEINEVERYNOW.
+      https://liveineverynow.com
+      Twitter: LIVEINEVERYNOW
+      Instagram: liveineverynow.
+      </description>
+      <pubDate>Sat, 25 Jul 2020 12:00:00 GMT</pubDate>
+      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/003.mp3"
+                 type="audio/mpeg" length="86680554"/>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:duration>36:07</itunes:duration>
+    </item>
+
+
+
+
     <!-- 002 - Everyone Should Try Journaling -->
     <item>
       <title>002 - Everyone Should Try Journaling</title>
