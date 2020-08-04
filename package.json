@@ -1,7 +1,7 @@
 {
   "name": "lien-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "LIVEINEVERYNOW website",
   "main": "index.js",
   "scripts": {
     "build": "echo hi"
