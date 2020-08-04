@@ -36,13 +36,11 @@
     <itunes:keywords>wisdom,knowledge,creativity,entrepreneur,strength,business,science,productivity,mindfulness</itunes:keywords>
 
     <!-- Categories -->
-		<itunes:category text="Business"></itunes:category>
-		<itunes:category text="Culture &amp; Society"></itunes:category>
-		<itunes:category text="Technology"></itunes:category>
-		<itunes:category text="Education"></itunes:category>
-		<itunes:category text="Health"></itunes:category>
-
-
+    <itunes:category text="Business"></itunes:category>
+    <itunes:category text="Culture &amp; Society"></itunes:category>
+    <itunes:category text="Technology"></itunes:category>
+    <itunes:category text="Education"></itunes:category>
+    <itunes:category text="Health"></itunes:category>
 
 
 
@@ -54,12 +52,12 @@
 
 
 
-    <!-- 000 - Title -->
+    <!-- 000 -->
     <!--
     <item>
-      <title>003 - Title</title>
+      <title>000 - ???</title>
 
-      <description>
+      <description>We discuss ???
 
       Twitter: LIENpodcast
       Instagram: liveineverynow.podcast
@@ -71,21 +69,23 @@
 
       </description>
 
+      <itunes:explicit>yes</itunes:explicit>
+
       <pubDate>Sat, 25 Jul 2020 12:00:00 GMT</pubDate>
 
-      <guid></guid>
+      <guid>???</guid>
 
-      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/003.mp3"
-                 type="audio/mpeg" length="???????"/>
-      <itunes:explicit>yes</itunes:explicit>
-      <itunes:duration>??????</itunes:duration>
+      <itunes:duration>???</itunes:duration>
+
+      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/???.mp3" 
+	    type="audio/mpeg" 
+	    length="????"/>
     </item>
     -->
 
 
 
-
-    <!-- 003 - Make Your Bed -->
+    <!-- 003 -->
     <item>
       <title>003 - Make Your Bed If You Want A Better Life</title>
       <description>We discuss how to build productive momentum in your life by simply starting your day by making your bed.
@@ -114,7 +114,7 @@
 
 
 
-    <!-- 002 - Everyone Should Try Journaling -->
+    <!-- 002 -->
     <item>
       <title>002 - Everyone Should Try Journaling</title>
       <guid>20200718</guid>
@@ -136,7 +136,7 @@
     </item>
 
 
-    <!-- 001 - Goals -->
+    <!-- 001 -->
     <item>
       <title>001 - Goals Are Incomplete</title>
       <guid>20200710</guid>
