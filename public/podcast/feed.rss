@@ -16,7 +16,7 @@
 
     <!-- Cover Image -->
     <itunes:image href="https://liveineverynow.com/podcast/cover.jpg" />
-    
+
     <!-- Language -->
     <language>en-us</language>
 
@@ -29,7 +29,7 @@
     <!-- Owner -->
     <itunes:owner>
       <itunes:email>work@liveineverynow.com</itunes:email>
-			<itunes:name>LIVEINEVERYNOW.</itunes:name>
+      <itunes:name>LIVEINEVERYNOW.</itunes:name>
     </itunes:owner>
 
     <!-- Keywords -->
@@ -77,11 +77,42 @@
 
       <itunes:duration>???</itunes:duration>
 
-      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/???.mp3" 
-      type="audio/mpeg" 
+      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/???.mp3"
+      type="audio/mpeg"
       length="????"/>
     </item>
     -->
+
+
+
+    <!-- 005 -->
+    <item>
+      <title>005 - Failure Predictions</title>
+
+      <description>We discuss how to focus your life using Failure Predictions.
+
+      Twitter: LIENpodcast
+      Instagram: liveineverynow.podcast
+
+      More from LIVEINEVERYNOW.
+      https://liveineverynow.com
+      Twitter: LIVEINEVERYNOW
+      Instagram: liveineverynow.
+
+      </description>
+
+      <itunes:explicit>yes</itunes:explicit>
+
+      <pubDate>Sat, 15 Aug 2020 12:00:00 GMT</pubDate>
+
+      <guid>20200815</guid>
+
+      <itunes:duration>31:40</itunes:duration>
+
+      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/005.mp3"
+      type="audio/mpeg"
+      length="76000652"/>
+    </item>
 
 
 
