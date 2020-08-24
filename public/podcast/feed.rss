@@ -85,6 +85,37 @@
 
 
 
+    <!-- 006 -->
+    <item>
+      <title>006 - The Lindy Effect</title>
+
+      <description>We explain the Lindy Effect and how it can help you prioritize effort and predict the future.
+
+      Twitter: LIENpodcast
+      Instagram: liveineverynow.podcast
+
+      More from LIVEINEVERYNOW.
+      https://liveineverynow.com
+      Twitter: LIVEINEVERYNOW
+      Instagram: liveineverynow.
+
+      </description>
+
+      <itunes:explicit>yes</itunes:explicit>
+
+      <pubDate>Sat, 22 Aug 2020 12:00:00 GMT</pubDate>
+
+      <guid>20200822</guid>
+
+      <itunes:duration>115298219</itunes:duration>
+
+      <enclosure url="https://media.githubusercontent.com/media/liveineverynow/lien-website/master/public/podcast/episodes/006.mp3"
+      type="audio/mpeg"
+      length="48:02"/>
+    </item>
+
+
+
     <!-- 005 -->
     <item>
       <title>005 - Failure Predictions</title>
