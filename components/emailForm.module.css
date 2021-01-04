@@ -3,6 +3,7 @@
   font-size: 48px;
   background: -webkit-linear-gradient(left, #ff6eee 30%, #FFE842);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
