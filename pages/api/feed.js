@@ -42,13 +42,17 @@ function buildRSS(episodes) {
             <title>${episode.episode_number.toString().padStart(3, '0')} - ${episode.title}</title>
             <link>https://podcast.liveineverynow.com</link>
             <description>
-                ${episode.description}
-
-
-                twitter: @liveineverynow
-                instagram: liveineverynow
-                website: https://liveineverynow.com
+                ${episode.description}\n\ntwitter: @liveineverynow\ninstagram: liveineverynow\nwebsite: https://liveineverynow.com
             </description>
+            <content:encoded>
+                <![CDATA[
+                    <p>${episode.description}</p>
+                    <br/>
+                    <a href="https://twitter.com/liveineverynow">Twitter</a>
+                    <a href="https://instagram.com/livineverynow">Instagram</a>
+                    <a href="https://liveineverynow.com">https://liveineverynow.com</a>
+                ]]>
+            </content:encoded>
 
             <guid>liveineverynow${episode.id}${episode.pub_date}</guid>
 
@@ -67,9 +71,7 @@ function buildRSS(episodes) {
 
     const xml = `<?xml version="1.0" encoding="UTF-8" ?>
 
-    <rss version="2.0"
-        xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
-        xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+        <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <channel>
 
         <!-- Title -->
