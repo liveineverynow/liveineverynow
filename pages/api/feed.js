@@ -36,9 +36,11 @@ function buildRSS(episodes) {
         let hour = pd.getHours()
         let mins = pd.getMinutes()
 
-        episodesXML += `
+        // TODO: change pubdate to correct time of day
+        const epXML = `
         <item>
             <title>${episode.episode_number.toString().padStart(3, '0')} - ${episode.title}</title>
+            <link>https://podcast.liveineverynow.com</link>
             <description>
                 ${episode.description}
             </description>
@@ -53,6 +55,9 @@ function buildRSS(episodes) {
             <itunes:duration>${episode.seconds}</itunes:duration>
         </item>
         `
+        if (Date.now() < pd) {
+            episodesXML += epXML
+        }
     })
 
     const xml = `<?xml version="1.0" encoding="UTF-8" ?>
