@@ -3,6 +3,39 @@ require('isomorphic-fetch');
 function buildRSS(episodes) {
     let episodesXML = ``
     episodes.map( episode => {
+        let pd = new Date(Date.parse(episode.pub_date))
+
+        let days = [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+        ]
+        let months = [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+        ]
+
+        let day = days[pd.getDay()]
+        let month = months[pd.getMonth()]
+        let date = pd.getDate()
+        let year = pd.getFullYear()
+        let hour = pd.getHours()
+        let mins = pd.getMinutes()
+
         episodesXML += `
         <item>
             <title>${episode.episode_number.toString().padStart(3, '0')} - ${episode.title}</title>
@@ -12,7 +45,7 @@ function buildRSS(episodes) {
 
             <guid>liveineverynow${episode.id}${episode.pub_date}</guid>
 
-            <pubDate>Sat, 25 Jul 2020 12:00:00 GMT</pubDate>
+            <pubDate>${day}, ${date} ${month} ${year} 07:00:00 EST</pubDate>
 
             <enclosure url="${episode.url}"
                         type="audio/mpeg" length="${episode.bytes}"/>
@@ -39,7 +72,7 @@ function buildRSS(episodes) {
         <description>Learning the tools and ideas we use on our journey through business, creativity, and life.</description>
 
         <!-- Cover Image -->
-        <itunes:image href="https://liveineverynow.com/podcast/cover.jpg" />
+        <itunes:image href="https://liveineverynow.s3-us-west-2.amazonaws.com/cover.jpg" />
         
         <!-- Language -->
         <language>en-us</language>
@@ -48,7 +81,7 @@ function buildRSS(episodes) {
         <itunes:explicit>yes</itunes:explicit>
 
         <!-- Homepage -->
-        <link>https://liveineverynow.com/podcast</link>
+        <link>https://podcast.liveineverynow.com</link>
 
         <!-- Owner -->
         <itunes:owner>
