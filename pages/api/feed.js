@@ -43,6 +43,11 @@ function buildRSS(episodes) {
             <link>https://podcast.liveineverynow.com</link>
             <description>
                 ${episode.description}
+
+
+                twitter: @liveineverynow
+                instagram: liveineverynow
+                website: https://liveineverynow.com
             </description>
 
             <guid>liveineverynow${episode.id}${episode.pub_date}</guid>
@@ -74,7 +79,7 @@ function buildRSS(episodes) {
         <itunes:author>LIVEINEVERYNOW.</itunes:author> 
 
         <!-- Description -->
-        <description>Learning the tools and ideas we use on our journey through business, creativity, and life.</description>
+        <description>Learning the tools and ideas to live happier, healthier, and more present lives.</description>
 
         <!-- Cover Image -->
         <itunes:image href="https://liveineverynow.s3-us-west-2.amazonaws.com/cover.jpg" />
@@ -98,11 +103,9 @@ function buildRSS(episodes) {
         <itunes:keywords>wisdom,knowledge,creativity,entrepreneur,strength,business,science,productivity,mindfulness</itunes:keywords>
 
         <!-- Categories -->
-            <itunes:category text="Business"></itunes:category>
-            <itunes:category text="Culture &amp; Society"></itunes:category>
-            <itunes:category text="Technology"></itunes:category>
-            <itunes:category text="Education"></itunes:category>
-            <itunes:category text="Health"></itunes:category>
+        <itunes:category text="Society &amp; Culture"></itunes:category>
+        <itunes:category text="Business"></itunes:category>
+        <itunes:category text="Education"></itunes:category>
 
 
 
