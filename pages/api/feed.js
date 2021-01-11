@@ -54,7 +54,7 @@ function buildRSS(episodes) {
             ]]>
         </content:encoded>
 
-        <guid>liveineverynow${episode.id}${episode.pub_date}</guid>
+        <guid>liveineverynow_podcast_${episode.episode_number.toString().padStart(3,'0')}</guid>
 
         <pubDate>${day}, ${date} ${month} ${year} ${hour.toString().padStart(2,'0')}:${mins.toString().padStart(2,'0')}:00 EST</pubDate>
 
