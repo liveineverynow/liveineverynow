@@ -1,8 +1,7 @@
 require('isomorphic-fetch');
 
 function buildRSS(episodes) {
-    let episodesXML = ``
-    episodes.map( episode => {
+    const episodesXML = episodes.map( episode => {
         let pd = new Date(Date.parse(episode.pub_date))
 
         let days = [
@@ -51,6 +50,7 @@ function buildRSS(episodes) {
                 <p><a href="https://twitter.com/liveineverynow">Twitter</a></p>
                 <p><a href="https://instagram.com/livineverynow">Instagram</a></p>
                 <p><a href="https://liveineverynow.com">https://liveineverynow.com</a></p>
+                <p><a href="https://discord.gg/9cX4EG3Uzz">https://discord.gg/9cX4EG3Uzz</a></p>
             ]]>
         </content:encoded>
 
@@ -67,10 +67,16 @@ function buildRSS(episodes) {
         <itunes:explicit>yes</itunes:explicit>
     </item>
 `
+        const testDate = new Date('2021-03-09T03:24:00')
+        // if (testDate > pd) {
         if (Date.now() > pd) {
-            episodesXML += epXML
+            return epXML
         }
+        else return ""
+
     })
+
+    const episodesXMLString = episodesXML.join("\n");
 
     const xml = `<?xml version="1.0" encoding="UTF-8" ?>
 
@@ -126,7 +132,7 @@ function buildRSS(episodes) {
     <!-- =========== Episodes ============= -->
     <!-- ================================== -->
 
-    ${episodesXML}
+    ${episodesXMLString}
 
     </channel>
 </rss>
@@ -136,32 +142,30 @@ function buildRSS(episodes) {
 }
 
 export default async function feedFunc(req, response) {
-    fetch('https://champion-weasel-77.hasura.app/v1/graphql', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: `
-        query MyQuery {
-            podcast_episode_aggregate {
-                nodes {
-                    bytes
-                    description
-                    episode_number
-                    explicit
-                    id
-                    pub_date
-                    title
-                    seconds
-                    url
+    const wacky = await fetch('https://champion-weasel-77.hasura.app/v1/graphql', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: `
+            query MyQuery {
+                podcast_episode_aggregate {
+                    nodes {
+                        bytes
+                        description
+                        episode_number
+                        explicit
+                        id
+                        pub_date
+                        title
+                        seconds
+                        url
+                    }
                 }
-            }
-        }`
-    }),
+            }`
+        }),
     })
-    .then(res => res.json())
-    .then(
-        res => {
-            response.statusCode = 200;
-            response.setHeader("Content-Type", "text/xml; charset=utf-8");
-            response.send(buildRSS(res.data.podcast_episode_aggregate.nodes))
-        });
+
+    const res = await wacky.json()
+    response.statusCode = 200;
+    response.setHeader("Content-Type", "text/xml; charset=utf-8");
+    response.send(buildRSS(res.data.podcast_episode_aggregate.nodes))
 }
