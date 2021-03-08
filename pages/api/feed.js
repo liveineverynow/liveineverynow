@@ -1,7 +1,13 @@
 require('isomorphic-fetch');
 
 function buildRSS(episodes) {
-    const episodesXML = episodes.map( episode => {
+    const sorted = episodes.sort((a, b) => {
+        const aDate = Date.parse(a.pub_date)
+        const bDate = Date.parse(b.pub_date)
+        return aDate - bDate
+    })
+
+    const episodesXML = sorted.map( episode => {
         let pd = new Date(Date.parse(episode.pub_date))
 
         let days = [
