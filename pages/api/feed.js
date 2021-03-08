@@ -4,7 +4,7 @@ function buildRSS(episodes) {
     const sorted = episodes.sort((a, b) => {
         const aDate = Date.parse(a.pub_date)
         const bDate = Date.parse(b.pub_date)
-        return aDate - bDate
+        return bDate - aDate 
     })
 
     const episodesXML = sorted.map( episode => {
