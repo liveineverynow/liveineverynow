@@ -44,7 +44,7 @@ function buildRSS(episodes) {
         // TODO: change pubdate to correct time of day
         const epXML = `
     <item>
-        <title>${episode.episode_number.toString().padStart(3, '0')} - ${episode.title}</title>
+        <title>${episode.episode_num} - ${episode.title}</title>
         <link>https://podcast.liveineverynow.com</link>
         <description>
             ${episode.description}\n\ntwitter: @liveineverynow\ninstagram: liveineverynow\nwebsite: https://liveineverynow.com
@@ -60,7 +60,7 @@ function buildRSS(episodes) {
             ]]>
         </content:encoded>
 
-        <guid>liveineverynow_podcast_${episode.episode_number.toString().padStart(3,'0')}</guid>
+        <guid>https://podcast.liveineverynow.com/${episode.episode_num}</guid>
 
         <pubDate>${day}, ${date} ${month} ${year} ${hour.toString().padStart(2,'0')}:${mins.toString().padStart(2,'0')}:00 EST</pubDate>
 
@@ -157,9 +157,8 @@ export default async function feedFunc(req, response) {
                     nodes {
                         bytes
                         description
-                        episode_number
+                        episode_num
                         explicit
-                        id
                         pub_date
                         title
                         seconds
@@ -171,6 +170,7 @@ export default async function feedFunc(req, response) {
     })
 
     const res = await wacky.json()
+    console.log(res)
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/xml; charset=utf-8");
     response.send(buildRSS(res.data.podcast_episode_aggregate.nodes))
