@@ -1,6 +1,9 @@
+import ProseP from '../components/ProseP/ProseP'
+
 export default function EpisodePage({ episode }) {
     return (
         <>
+            <ProseP red={true} />
             <h1>{ episode.title }</h1>
             <p>{ episode.episode_number }</p>
             <p>{ episode.pub_date }</p>

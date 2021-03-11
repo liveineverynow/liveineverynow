@@ -1,0 +1,8 @@
+.red {
+    background-color: red;
+    transition: .3s ease-in-out;
+}
+
+.red:hover {
+    background-color: blue;
+}
