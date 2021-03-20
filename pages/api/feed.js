@@ -73,7 +73,7 @@ function buildRSS(episodes) {
         <itunes:explicit>yes</itunes:explicit>
     </item>
 `
-        // const testDate = new Date('2021-03-10T13:24:00')
+        // const testDate = new Date('2021-03-20T13:24:00')
         // if (testDate > pd) {
         if (Date.now() > pd) {
             return epXML
