@@ -73,12 +73,14 @@ function buildRSS(episodes) {
         <itunes:explicit>yes</itunes:explicit>
     </item>
 `
-        // const testDate = new Date('2021-03-20T13:24:00')
+        // const testDate = new Date('2021-03-23T08:00:00')
         // if (testDate > pd) {
         if (Date.now() > pd) {
             return epXML
         }
-        else return ""
+        else {
+            return ""
+        }
 
     })
 
@@ -170,7 +172,6 @@ export default async function feedFunc(req, response) {
     })
 
     const res = await wacky.json()
-    console.log(res)
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/xml; charset=utf-8");
     response.send(buildRSS(res.data.podcast_episode_aggregate.nodes))
