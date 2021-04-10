@@ -15,7 +15,7 @@ async function apiQuery(gql_string) {
 export async function allEpisodes() {
     const query = `
         query allEpisodes {
-            p/odcast_episode(order_by: {episode_num: desc}) {
+            podcast_episode(order_by: {episode_num: desc}) {
                 episode_num
                 title
                 description
@@ -28,7 +28,12 @@ export async function allEpisodes() {
         }
     `
     const response = await apiQuery(query)
-    const allEpisodes = response.data.podcast_episode
+    const data = response.data
+    if (!data) {
+        return []
+    }
+
+    const allEpisodes = data.podcast_episode
     return allEpisodes
 }
 
