@@ -15,7 +15,7 @@ async function apiQuery(gql_string) {
 export async function allEpisodes() {
     const query = `
         query allEpisodes {
-            podcast_episode(order_by: {episode_num: desc}) {
+            p/odcast_episode(order_by: {episode_num: desc}) {
                 episode_num
                 title
                 description
@@ -50,19 +50,34 @@ export async function oneEpisode(episodeNumber) {
     `
 
     const response = await apiQuery(query)
-    const episode = response.data.podcast_episode_by_pk
+    const data = response.data
+    if (!data) {
+        return {
+            episode_num: '000',
+            title: 'Does not exists',
+            description: 'Not a valid episode number',
+            pub_date: '1969-04-20T04:20:20',
+            url: 'https://liveineverynowisthebest.com/error.mp3',
+            explicit: true,
+            seconds: 1,
+            bytes: 1,
+        }
+    }
+    const episode = data.podcast_episode_by_pk
     if (episode) {
         return episode
     }
-    else return {
-        episode_num: '000',
-        title: 'Does not exists',
-        description: 'Not a valid episode number',
-        pub_date: '1969-04-20T04:20:20',
-        url: 'https://liveineverynowisthebest.com/error.mp3',
-        explicit: true,
-        seconds: 1,
-        bytes: 1,
+    else { 
+        return {
+            episode_num: '000',
+            title: 'Does not exists',
+            description: 'Not a valid episode number',
+            pub_date: '1969-04-20T04:20:20',
+            url: 'https://liveineverynowisthebest.com/error.mp3',
+            explicit: true,
+            seconds: 1,
+            bytes: 1,
+        }
     }
 }
 

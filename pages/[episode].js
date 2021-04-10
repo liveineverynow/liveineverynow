@@ -60,7 +60,7 @@ export async function getStaticPaths() {
 
     let nums = []
 
-    for (let i=1; i<100; i++) {
+    for (let i=1; i<20; i++) {
         nums.push(i.toString().padStart(3, '0'))
     }
 
