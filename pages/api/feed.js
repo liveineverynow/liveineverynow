@@ -1,3 +1,4 @@
+import { formattedDate } from '../../util.js'
 require('isomorphic-fetch');
 
 function buildRSS(episodes) {
@@ -8,40 +9,7 @@ function buildRSS(episodes) {
     })
 
     const episodesXML = sorted.map( episode => {
-        let pd = new Date(Date.parse(episode.pub_date))
 
-        let days = [
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat",
-        ]
-        let months = [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-        ]
-
-        let day = days[pd.getDay()]
-        let month = months[pd.getMonth()]
-        let date = pd.getDate()
-        let year = pd.getFullYear()
-        let hour = pd.getHours()
-        let mins = pd.getMinutes()
-
-        // TODO: change pubdate to correct time of day
         const epXML = `
     <item>
         <title>${episode.episode_num} - ${episode.title}</title>
@@ -62,7 +30,7 @@ function buildRSS(episodes) {
 
         <guid>https://podcast.liveineverynow.com/${episode.episode_num}</guid>
 
-        <pubDate>${day}, ${date} ${month} ${year} ${hour.toString().padStart(2,'0')}:${mins.toString().padStart(2,'0')}:00 EST</pubDate>
+        <pubDate>${formattedDate(episode.pub_date, true)}</pubDate>
 
         <enclosure 
             url="${episode.url}"
@@ -73,8 +41,9 @@ function buildRSS(episodes) {
         <itunes:explicit>yes</itunes:explicit>
     </item>
 `
-        const testDate = new Date('2021-04-02T08:00:00')
-        // if (testDate > pd) {
+        const pd = new Date(Date.parse(episode.pub_date))
+        const testDate = new Date('2021-04-15T08:00:00')
+        //if (testDate > pd) {
         if (Date.now() > pd) {
             return epXML
         }
