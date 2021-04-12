@@ -29,6 +29,15 @@ export async function getStaticProps(context) {
 
     const episode = await oneEpisode(epNumber)
 
+    if (!episode) {
+        return {
+            redirect: {
+                destination: '/',
+                permanent: false,
+            }
+        }
+    }
+
     return {
         props: {
             episode,

@@ -89,33 +89,10 @@ export async function oneEpisode(episodeNumber) {
     const response = await apiQuery(query)
     const data = response.data
     if (!data) {
-        return {
-            episode_num: '000',
-            title: 'Does not exists',
-            description: 'Not a valid episode number',
-            pub_date: '1969-04-20T04:20:20',
-            url: null,
-            explicit: true,
-            seconds: 1,
-            bytes: 1,
-        }
+        return null
     }
     const episode = data.podcast_episode_by_pk
-    if (episode) {
-        return episode
-    }
-    else { 
-        return {
-            episode_num: '000',
-            title: 'Does not exists',
-            description: 'Not a valid episode number',
-            pub_date: '1969-04-20T04:20:20',
-            url: null,
-            explicit: true,
-            seconds: 1,
-            bytes: 1,
-        }
-    }
+    return episode
 }
 
 // Transform datestring
