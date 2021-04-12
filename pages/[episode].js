@@ -48,16 +48,8 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
 
-    const episodes = await allEpisodes()
-
-    const paths = episodes.map(ep => {
-        return {
-            params: { episode: ep.episode_num }
-        }
-    })
-
     return {
-        paths,
+        paths: [],
         fallback: true,
     }
 }
