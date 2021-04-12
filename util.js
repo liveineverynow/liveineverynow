@@ -37,6 +37,38 @@ export async function allEpisodes() {
     return allEpisodes
 }
 
+// Returns all data from published episodes
+export async function publishedEpisodes() {
+
+    const current_timestamp = new Date().toISOString()
+
+    const query = `
+        query publishedEpisodes {
+            podcast_episode(
+                order_by: {episode_num: desc},
+                where: {pub_date: {_lte: "${current_timestamp}"}}
+            ) {
+                episode_num
+                title
+                description
+                pub_date
+                url
+                explicit
+                seconds
+                bytes
+            }
+        }
+    `
+    const response = await apiQuery(query)
+    const data = response.data
+    if (!data) {
+        return []
+    }
+
+    const allEpisodes = data.podcast_episode
+    return allEpisodes
+}
+
 // Returns all data from one episode
 export async function oneEpisode(episodeNumber) {
     const query = `

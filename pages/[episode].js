@@ -1,7 +1,15 @@
 import { oneEpisode, allEpisodes } from '../util.js'
 import Player from '../components/Player/Player.js'
+import { useRouter } from 'next/router'
 
 export default function EpisodePage({ episode }) {
+
+    const router = useRouter()
+
+    if (router.isFallback) {
+        return <div>Loading...</div>
+    }
+
     return (
         <>
             <Player 
@@ -39,20 +47,8 @@ export async function getStaticPaths() {
         }
     })
 
-    //let nums = []
-
-    //for (let i=1; i<20; i++) {
-        //nums.push(i.toString().padStart(3, '0'))
-    //}
-
-    //const paths = nums.map(num => {
-        //return {
-            //params: { episode: num }
-        //}
-    //})
-
     return {
         paths,
-        fallback: false,
+        fallback: true,
     }
 }

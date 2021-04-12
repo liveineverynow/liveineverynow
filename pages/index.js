@@ -3,7 +3,8 @@ import Footer from '../components/footer'
 import Head from 'next/head'
 import {
     allEpisodes,
-    oneEpisode
+    publishedEpisodes,
+    oneEpisode,
 } from '../util.js'
 
 import Player from '../components/Player/Player.js'
@@ -43,7 +44,7 @@ function HomePage({ episodes }) {
 }
 
 export async function getStaticProps() {
-    const episodes = await allEpisodes()
+    const episodes = await publishedEpisodes()
 
     return {
         props: {

@@ -1,4 +1,4 @@
-import { formattedDate } from '../../util.js'
+import { formattedDate, allEpisodes, publishedEpisodes } from '../../util.js'
 require('isomorphic-fetch');
 
 function buildRSS(episodes) {
@@ -41,15 +41,7 @@ function buildRSS(episodes) {
         <itunes:explicit>yes</itunes:explicit>
     </item>
 `
-        const pd = new Date(Date.parse(episode.pub_date))
-        const testDate = new Date('2021-04-15T08:00:00')
-        //if (testDate > pd) {
-        if (Date.now() > pd) {
-            return epXML
-        }
-        else {
-            return ""
-        }
+        return epXML
 
     })
 
@@ -119,29 +111,10 @@ function buildRSS(episodes) {
 }
 
 export default async function feedFunc(req, response) {
-    const wacky = await fetch('https://champion-weasel-77.hasura.app/v1/graphql', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: `
-            query MyQuery {
-                podcast_episode_aggregate {
-                    nodes {
-                        bytes
-                        description
-                        episode_num
-                        explicit
-                        pub_date
-                        title
-                        seconds
-                        url
-                    }
-                }
-            }`
-        }),
-    })
+    //const episodes = await allEpisodes()  // for testing
+    const episodes = await publishedEpisodes()
 
-    const res = await wacky.json()
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/xml; charset=utf-8");
-    response.send(buildRSS(res.data.podcast_episode_aggregate.nodes))
+    response.send(buildRSS(episodes))
 }
