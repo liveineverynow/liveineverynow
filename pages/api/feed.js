@@ -72,7 +72,7 @@ function buildRSS(episodes) {
     <description>Learning the tools and ideas to live happier, healthier, and more present lives.</description>
 
     <!-- Cover Image -->
-    <itunes:image href="https://liveineverynow.s3-us-west-2.amazonaws.com/cover.jpg" />
+    <itunes:image href="https://liveineverynow.s3-us-west-2.amazonaws.com/cover_new.jpg" />
 
     <!-- Language -->
     <language>en-us</language>

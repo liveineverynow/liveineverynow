@@ -25,6 +25,10 @@ function HomePage({ episodes }) {
 
         <div>
             <h1>LIVEINEVERYNOW. Podcast</h1>
+	    <img width="500"
+	src="https://liveineverynow.s3-us-west-2.amazonaws.com/cover_new.jpg"
+	alt="Podcast Cover Art" />
+
         </div>
 
         {
