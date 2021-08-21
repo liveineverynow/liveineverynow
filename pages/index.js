@@ -120,12 +120,13 @@ function HomePage() {
         <h3>Our Mission</h3>
         <p>We aim to give people the tools to live <b>happier</b>, <b>healthier</b>, and <b><i>more present</i></b> lives. We achieve this through value-driven content, design, and material.</p>
     </div>
-
+        
 
 
     <EmailForm/>
 
     <Footer/>
+            <iframe src="https://discordapp.com/widget?id=690742280633450526&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
     </>
     )
