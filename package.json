@@ -4,9 +4,10 @@
   "description": "LIVEINEVERYNOW website",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
-    "build": "next build"
+      "dev": "next dev",
+      "start": "next start",
+      "build": "next build",
+      "cookiecutter": "cookiecutter"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
   "dependencies": {
     "next": "^11.1.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.38.0"
+  },
+  "devDependencies": {
+    "cookiecutter": "^1.3.0"
   }
 }
