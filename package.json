@@ -1,31 +1,40 @@
 {
-  "name": "lien-website",
+  "name": "liveineverynow",
   "version": "1.0.0",
   "description": "LIVEINEVERYNOW website",
   "main": "index.js",
   "scripts": {
-      "dev": "next dev",
-      "start": "next start",
-      "build": "next build",
-      "cookiecutter": "cookiecutter"
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "cookiecutter": "cookiecutter",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liveineverynow/website.git"
+    "url": "git+https://github.com/liveineverynow/liveineverynow.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/liveineverynow/website/issues"
+    "url": "https://github.com/liveineverynow/liveineverynow/issues"
   },
-  "homepage": "https://github.com/liveineverynow/website#readme",
+  "homepage": "https://github.com/liveineverynow/liveineverynow#readme",
   "dependencies": {
     "next": "^11.1.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.38.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/react": "^6.3.7",
+    "babel-loader": "^8.2.2",
     "cookiecutter": "^1.3.0"
   }
 }
