@@ -2,8 +2,7 @@
 
 The website for [LIVEINEVERYNOW.](https://liveineverynow.com)
 
-Uses [NextJS](https://nextjs.org) and [SCSS
-modules](https://sass-lang.com/documentation/syntax#scss).
+Uses [NextJS](https://nextjs.org) and CSS modules.
 
 Component library created with [Storybook](https://storybook.js.org).
 
