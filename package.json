@@ -9,7 +9,7 @@
     "build": "next build && npm run build-storybook",
     "cookiecutter": "cookiecutter",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o public/present --preview-url=/present/iframe.html --force-build-preview"
+    "build-storybook": "build-storybook -o public/present"
   },
   "repository": {
     "type": "git",
