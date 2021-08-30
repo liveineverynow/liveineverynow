@@ -9,7 +9,7 @@
     "build": "next build && npm run build-storybook",
     "cookiecutter": "cookiecutter",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./public/present"
+    "build-storybook": "build-storybook -s public -o public/present"
   },
   "repository": {
     "type": "git",
