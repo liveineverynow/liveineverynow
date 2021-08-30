@@ -15,3 +15,5 @@ Primary.args = {
     darkMode: false,
     label: 'Storybook Label',
 };
+
+Primary.storyName = "Primary"
