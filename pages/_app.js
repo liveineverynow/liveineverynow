@@ -1,4 +1,4 @@
-import '../styles/g2.css'
+import '../styles/global.css'
 
 function MyApp({ Component, pageProps }) {
   return (

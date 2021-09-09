@@ -4,7 +4,7 @@ The website for [LIVEINEVERYNOW.](https://liveineverynow.com)
 
 The component library is hosted [here.](https://liveineverynow.com/present/index.htm)
 
-Uses [NextJS](https://nextjs.org) and CSS modules.
+Uses [NextJS](https://nextjs.org) and [TailwindCSS](https://tailwindcss.com).
 
 Component library created with [Storybook](https://storybook.js.org).
 
