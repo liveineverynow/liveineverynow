@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import styles from './Roy.module.css'
 import { useState, useEffect } from 'react'
 
 export const Roy = ({

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import styles from './TemplateComponent.module.css'
 
 export const TemplateComponent = ({
     label="Label",
