@@ -7,10 +7,15 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+      fontFamily: {
+	  'sans': ['"Helvetica Neue"'],
+      },
+      extend: {},
   },
   variants: {
-    extend: {},
+      extend: {
+	  borderWidth: ['first'],
+      }
   },
   plugins: [],
 }

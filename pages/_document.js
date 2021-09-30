@@ -7,6 +7,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
             <link rel="shortcut icon" href="assets/favicon.png" />
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         </Head>
         <body>
           <Main />

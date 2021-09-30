@@ -1,3 +1,4 @@
+import '../styles/fonts/helvetica.css'
 import '../styles/global.css'
 
 function MyApp({ Component, pageProps }) {

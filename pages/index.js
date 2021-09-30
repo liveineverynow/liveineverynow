@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import { NavDropdown } from '../components/NavDropdown/NavDropdown'
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
     <header>
     <img id="logo" src="assets/logo.png" alt="LIVEINEVERYNOW logo"/>
     </header>
+	<NavDropdown/>
     </>
   )
 }
